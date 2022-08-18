@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: gilroy;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    background-color: #222;
+    overflow: hidden;
+}
+
+#main>h1{
+    color: #fff;
+    position: absolute;
+    top:7vh;
+    left: 40vw;
+    transform: translate(0,-50%);
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-size: 40px;
+}
+#feed{
+    width: 22vw;
+    height: 72vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#feed::-webkit-scrollbar{
+    display: none;
+}
+#stories{
+    position: relative;
+    min-width: 100%;
+    height: 18%;
+    /* overflow: hidden; */
+    /* background-color: rgb(0, 255, 255); */
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1px solid #666;
+    overflow-y: auto;
+
+}
+#story{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 7px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to  bottom, rgb(170,100,20), rgb(220,50,38));
+
+
+
+}
+#stry{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    
+}
+#stry img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    
+}
+#posts{
+    width: 100%;
+    height: 82%;
+    /* background-color: royalblue; */
+    /* border-bottom: 1px solid ; */
+}
+#post{
+    width: 100%;
+    height: 80%;
+    /* background-color: orange; */
+    position: relative;
+}
+#postdtl{
+    /* position: absolute; */
+    width: 100%;
+    height: 35px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    /* margin-left: 10px; */
+    z-index: 100;
+
+    
+}
+#postprof{
+    width: 30px;
+    height: 30px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 5px;
+    color: #fff;
+
+}
+#postprof>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+#postdtl>h4{
+    /* color: #fff; */
+    letter-spacing: 1px;
+    font-weight:500;
+}
+#post>img{
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+    background-position :center;
+    z-index: 40;
+}
+#aboutpost{
+    width: 100%;
+    height: 14%;
+    /* background-color: yellow; */
+    position: relative;
+    font-size: 23px;
+    padding: 3px 5px;
+}
+#storyview{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1999;
+    background-color: rgba(34, 34, 34, 0.534);
+    /* display: none; */
+    display: none;
+
+}
+#storycontant{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 17%;
+    /* background-color: #fff; */
+    /* border: 1px solid #fff; */
+}
+#storycontant>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#like{
+    /* width: 50px;
+    height: 50px; */
+    font-size: 80px;
+    /* background-color: re?d; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    font-weight: 100;
+}
+ #like .ri-heart-fill{
+    font-weight: 100;
+    color: rgba(240, 3, 3, 0.829);
+    display: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+@media (max-width:800px) {
+    #main{
+        width: 100vw;
+        height: 100vh;
+        /* position: relative; */
+        background-color: #222;
+    }
+    #feed{
+        width: 70vw;
+        height: 70vh;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    #feed::-webkit-scrollbar{
+        display: none;
+    }
+    #stories{
+        position: relative;
+        min-width: 100%;
+        height: 18%;
+        /* overflow: hidden; */
+        /* background-color: rgb(0, 255, 255); */
+        display: flex;
+        align-items: center;
+        border-bottom: 0.1px solid #666;
+        overflow-y: auto;
+    
+    }
+    #story{
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        border-radius: 50%;
+        margin-left: 7px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient( to  bottom, rgb(170,100,20), rgb(220,50,38));
+    
+    
+    
+    }
+    #stry{
+        width: 95%;
+        height: 95%;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    #stry img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        
+    }
+    #posts{
+        width: 100%;
+        height: 82%;
+        /* background-color: royalblue; */
+        /* border-bottom: 1px solid ; */
+    }
+    #post{
+        width: 100%;
+        height: 80%;
+        /* background-color: orange; */
+        position: relative;
+    }
+    #postdtl{
+        /* position: absolute; */
+        width: 100%;
+        height: 35px;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        /* margin-left: 10px; */
+        z-index: 100;
+    
+        
+    }
+    #postprof{
+        width: 30px;
+        height: 30px;
+        /* background-color: yellow; */
+        border-radius: 50%;
+        margin-left: 7px;
+        margin-right: 5px;
+        color: #fff;
+    
+    }
+    #postprof>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+    }
+    #postdtl>h4{
+        /* color: #fff; */
+        letter-spacing: 1px;
+        font-weight:500;
+    }
+    #post>img{
+        width: 100%;
+        height: 89%;
+        object-fit: cover;
+        background-position :center;
+        z-index: 40;
+    }
+    #aboutpost{
+        width: 100%;
+        height: 14%;
+        /* background-color: yellow; */
+        position: relative;
+        font-size: 23px;
+        padding: 3px 5px;
+    }
+    #storyview{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1999;
+        background-color: rgba(34, 34, 34, 0.534);
+        /* display: none; */
+        display: none;
+    
+    }
+    #storycontant{
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 17%;
+        /* background-color: #fff; */
+        border: 1px solid #fff;
+    }
+    #storycontant>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #like{
+        /* width: 50px;
+        height: 50px; */
+        font-size: 80px;
+        /* background-color: re?d; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+        font-weight: 100;
+    }
+     #like .ri-heart-fill{
+        font-weight: 100;
+        color: rgba(240, 3, 3, 0.829);
+        display: none;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    }
+       
+}
